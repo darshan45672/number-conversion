@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLVE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/query.css" />
+    <script defer src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/ui/1.8.17/jquery-ui.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script defer type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <style>
+        .canvas__div {
+      width: 100%;
+      border: 1px solid var(--clr-title-background);
+      background-color: #fff;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      flex-wrap: wrap;
+      flex-direction: row;
+      height: auto;
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      display: flex;
+      justify-content: center; /* Center the content horizontally */
+      align-items: center; /* Center the content vertically */
+  }
+  
+  table {
+      border-collapse: collapse;
+      width: 100%; /* Adjust the width as needed */
+      max-width: 100%; /* Adjust the max-width as needed */
+  }
+  
+      </style>
+</head>
+<body onload="startsim();varinit();">
+    <div class="title-div-container">
+        <div class="title-div">
+            <div class="logo-div">
+                <a href="#"><img src="images/nitk.svg" alt="Logo" class="logo" /></a>
+            </div>
+            <h1>Numerical Conversion</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="main-section">
+                <div id="simulation" class="main__task-div">
+                    <div class="title-control-div">
+                        <h3 class="task-title">Simulation</h3>
+                    </div>
+                    <div class="canvas__div">
+                        <center>
+                          <h4>Select a Convertion</h4>
+                          <table>
+                            <tr>
+                          <td> <a href="index1.html"><button class="button" style="cursor: pointer;">Binary to Decimal</button></a></td>
+                          <td><a href="index2.html"><button class="button" style="cursor: pointer;">Octal to Decimal </button></a></td>
+                          <td><a href="index3.html"><button class="button" style="cursor: pointer;">Hexadecimal to Decimal </button></a></td>
+                            </tr>
+                            <tr>
+                          <td><a href="index4.html"><button class="button" style="cursor: pointer;">Hexadecimal to Binary</button></a></td>
+                          <td><a href="index5.html"><button class="button" style="cursor: pointer;">Decimal to Binary</button></a></td>
+                          <td><a href="index6.html"><button class="button" style="cursor: pointer;">Octal to Binary</button></a></td>
+                              </tr>
+                              <tr>
+                          <td><a href="index7.html"><button class="button" style="cursor: pointer;">Decimal to Octal</button></a></td>
+                          <td><a href="index8.html"><button class="button" style="cursor: pointer;">Hexadecimal to Octal</button></a></td>
+                          <td><a href="index9.html"><button class="button" style="cursor: pointer;">Binary to Octal</button></a></td>
+                              </tr>
+                              <tr>
+                          <td><a href="index10.html"><button class="button" style="cursor: pointer;">Decimal to Hexadecimal</button></a></td>
+                          <td><a href="index11.html"><button class="button" style="cursor: pointer;">Octal to Hexadecimal</button></a></td>
+                          <td><a href="index12.html"><button class="button" style="cursor: pointer;">Binary to Hexadecimal</button></a></td>
+                                </tr>
+                        </table>
+                        </center>
+                    </div>
+                </div>
+                <div class="main__task-div footer">
+                    <p>Copyright © SOLVE The Virtual Lab @ NITK Surathkal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
